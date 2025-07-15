@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Skill Dashboard</h2>
+    <div class="nav">
+      <a href="/skills/add">+ Add Skill</a>
+      <a href="/logout">Logout</a>
+    </div>
+    <ul>
+      <% skills.forEach(skill => { %>
+        <li>
+          <strong><%= skill.title %></strong><br>
+          <%= skill.description %><br>
+          <small>by <%= skill.userId.username %></small>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Skill</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add a New Skill</h2>
+    <form method="POST" action="/skills/add">
+      <input name="title" placeholder="Skill Title" required>
+      <textarea name="description" placeholder="Describe the skill..." required></textarea>
+      <button type="submit">Submit Skill</button>
+    </form>
+    <div class="nav">
+      <a href="/dashboard">Back to Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>
